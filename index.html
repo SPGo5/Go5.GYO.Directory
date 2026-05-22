@@ -2,15 +2,77 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href=https://i.postimg.cc/hjbQthsz/Tsutsuji-orange-white-with-leaf-dir-neat-for-favicon.png">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="https://i.postimg.cc/hjbQthsz/Tsutsuji-orange-white-with-leaf-dir-neat-for-favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Klee+One&family=Inter:wght@400&family=Cinzel:wght@400&family=Crimson+Pro:wght@400&display=swap" rel="stylesheet">
+<style>
+@font-face {
+  font-family: 'Grey Qo';
+  src: url('https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/greyqo/GreyQo-Regular.ttf') format('truetype');
+}
+</style>
 <title>GYO 🗂️</title>
 <meta name="apple-mobile-web-app-title" content="觀音靈簽 🗂️">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="application-name" content="觀音靈簽 🗂️">
 <link rel="manifest" href="manifest.json">
 <style>
-  body { margin: 0; padding: 20px; font-family: 'Cormorant Garamond', serif; background-color: #F0EFE9; }
+  body { margin: 0; padding: 20px; font-family: 'Cormorant Garamond', serif; background-color: #000073; }
+
+  /* Header */
+  .page-header {
+    max-width: 900px;
+    margin: 0 auto 24px;
+  }
+
+  .site-label {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 6px;
+  }
+
+  .site-label-cinzel {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    color: #00bfff;
+    text-transform: uppercase;
+  }
+
+  .site-label-greyqo {
+    font-family: 'Grey Qo', cursive;
+    font-size: 18px;
+    color: #9400FF;
+  }
+
+  .title-line {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .title-chinese {
+    font-family: 'Klee One', serif;
+    font-size: 26px;
+    color: #ffffff;
+    line-height: 1;
+  }
+
+  .title-english {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1;
+  }
+
+  .warning-text {
+    font-family: 'Crimson Pro', serif;
+    font-size: 15px;
+    color: crimson;
+    margin: 0;
+  }
 
   /* Navigation */
   .nav-wrapper {
@@ -32,8 +94,8 @@
     display: block;
     width: 100%;
     padding: 15px;
-    background: linear-gradient(180deg, #ffffff 0%, #e8e6e0 100%);
-    color: #000073;
+    background: #2b45f4;
+    color: #ffffff;
     text-align: center;
     text-decoration: none;
     font-family: 'Cormorant Garamond', serif;
@@ -43,19 +105,19 @@
     border-radius: 8px;
     transition: all 0.3s ease;
     box-sizing: border-box;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.15), 0 1px 3px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.8);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.2);
   }
 
   .home-button:hover {
-    background: linear-gradient(180deg, #f0efe9 0%, #d8d6d0 100%);
-    color: #000073;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.2), 0 2px 4px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.8);
+    background: #3d55ff;
+    color: #ffffff;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.35), 0 2px 4px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.2);
     transform: translateY(-1px);
   }
 
   .home-button:active {
-    background: linear-gradient(180deg, #d8d6d0 0%, #e8e6e0 100%);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 2px 4px rgba(0,0,0,0.1);
+    background: #1f38e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3), inset 0 2px 4px rgba(0,0,0,0.2);
     transform: translateY(1px);
   }
 
@@ -148,13 +210,25 @@
     flex-shrink: 0;
   }
   .legend-label {
-    color: #333;
+    color: #ffffff;
     line-height: 1.2;
     font-weight: 500;
   }
 </style>
 </head>
 <body>
+
+<div class="page-header">
+  <div class="site-label">
+    <span class="site-label-cinzel">Divination (i) </span>
+    <span class="site-label-greyqo">Tsutsuji</span>
+  </div>
+  <div class="title-line">
+    <span class="title-chinese">觀音靈簽</span>
+    <span class="title-english">Lots Directory</span>
+  </div>
+  <p class="warning-text">You can't open any of the lots below if you've not registered.</p>
+</div>
 
 <div style="text-align: center; margin-bottom: 20px;">
   <img src="https://i.postimg.cc/rsLTbbj2/Tsutsuji-directory-logo-KY-with-tsutsuji-cropped.png" alt="Kwan Yin" style="max-width: 400px; width: 100%; height: auto;">
